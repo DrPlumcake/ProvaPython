@@ -21,4 +21,6 @@ for thread in threads:
 
 print(urls)
 
+print("$PWD\n")
+
 # Process the collected data
