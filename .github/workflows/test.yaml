@@ -25,3 +25,7 @@ jobs:
       with:
         name: Security report
         path: output/security_report.txt
+
+    - name: Read Security Report 
+      run: |
+        cat output/security_report.txt  # Esempio di come visualizzare il contenuto del file security_report.txt  # Specifica la directory in cui desideri scaricare l'artefatto

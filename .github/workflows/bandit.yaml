@@ -27,3 +27,8 @@ jobs:
       with:
         # This is the path at which the your python project is located in you github repo.
         project_path: main.py
+
+    - name: Use Security Report
+      run: |
+        cat output/security_report.txt  # Esempio di come visualizzare il contenuto del file
+
