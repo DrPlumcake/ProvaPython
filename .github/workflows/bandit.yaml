@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-
+# From ioggstream repo's workflow
 name: Bandit checks
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -25,5 +25,8 @@ jobs:
     - name: python-bandit with code annotations
       uses: ioggstream/bandit-report-artifacts@v0.0.2
       with:
-        # This is the path at which the your python project is located in you github repo.
-        project_path: main.py
+
+    - name: Use Security Report
+      run: |
+        cat output/security_report.txt
+

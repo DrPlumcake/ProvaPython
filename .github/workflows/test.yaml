@@ -1,5 +1,5 @@
 name: Security check - Bandit
-
+#from ioggstream repo's README
 on: push
 
 jobs:
@@ -25,3 +25,7 @@ jobs:
       with:
         name: Security report
         path: output/security_report.txt
+
+    - name: Read Security Report 
+      run: |
+        cat output/security_report.txt
