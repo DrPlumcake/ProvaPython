@@ -2,6 +2,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
+import os
+
 # Load your dataset and preprocess it
 X, y = load_dataset()
 
@@ -18,4 +20,6 @@ y_pred = model.predict(X_test)
 # Calculate accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
-os.chdir(.github/)
+os.chdir("../")
+printf("cose")
+

@@ -19,4 +19,6 @@ for thread in threads:
 for thread in threads:
     thread.join()
 
+print(urls)
+
 # Process the collected data
