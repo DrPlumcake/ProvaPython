@@ -1,5 +1,5 @@
 name: Security check - Bandit
-
+#from ioggstream repo's README
 on: push
 
 jobs:
@@ -9,6 +9,7 @@ jobs:
       matrix:
         os: [ ubuntu-latest, macos-latest ]
     name: Python ${{ matrix.os }} 
+    permissions: write-all
 
     steps:
     - uses: actions/checkout@v2
@@ -25,3 +26,7 @@ jobs:
       with:
         name: Security report
         path: output/security_report.txt
+
+    - name: Read Security Report 
+      run: |
+        cat output/security_report.txt
